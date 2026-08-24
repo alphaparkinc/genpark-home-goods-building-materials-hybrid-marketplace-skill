@@ -1,0 +1,41 @@
+{
+  "name": "genpark-home-goods-building-materials-hybrid-marketplace-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Home decor, furniture, and building materials hybrid 1P/3P marketplace heavy freight route scheduler with white-glove assembly management.",
+  "author": "genpark",
+  "category": "home-goods",
+  "tags": [
+    "home-goods",
+    "building-materials",
+    "heavy-freight-logistics",
+    "white-glove-delivery",
+    "madeiramadeira"
+  ],
+  "inputs": {
+    "furniture_sku": {
+      "type": "string"
+    },
+    "weight_kg": {
+      "type": "number"
+    },
+    "destination_cep": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "fulfillment_quote_id": {
+      "type": "string"
+    },
+    "bulky_heavy_freight_cost_brl": {
+      "type": "number"
+    },
+    "in_room_white_glove_assembly_available": {
+      "type": "boolean"
+    },
+    "bulky_freight_lead_time_days": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
